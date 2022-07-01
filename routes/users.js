@@ -34,7 +34,7 @@ router.post('/sign-up', async function(req, res, next) {
     req.session.name = {name: newUserSaved.name, id: newUserSaved._id};
     req.session.FirstName = {name: newUserSaved.FirstName, id: newUserSaved._id};
 
-     res.redirect('/index');
+     res.redirect('/');
    
     }else {
       res.redirect('/users/login');
