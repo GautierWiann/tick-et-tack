@@ -181,7 +181,7 @@ router.post('/search', async function(req, res, next){
   } else {res.render('noresults', {title: "noresults", journeys, dateJ, from, to})}
 })
 
-router.get('/result', function(req, res, next) {
+router.get('/game', function(req, res, next) {
 
   res.render('game')
 })
